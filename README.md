@@ -282,7 +282,7 @@ flowchart TD
     SKIP --> LOOP
     
     CHECKSOC -->|Ja| CALC[Max verfügbare Leistung<br>berechnen]
-    CALC --> ASSIGN[Leistung zuweisen:<br>min'(verfügbar, Restbedarf')']
+    CALC --> ASSIGN[Leistung zuweisen:<br>min verfügbar, Restbedarf]
     ASSIGN --> UPDATE[Restbedarf aktualisieren]
     UPDATE --> CHECKDONE{Restbedarf = 0?}
     
