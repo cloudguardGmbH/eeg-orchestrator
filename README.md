@@ -36,9 +36,9 @@ flowchart TB
     SMC --> NB
     
     NB[("NETZBETREIBER<br>(z.B. EVN)<br>Datenbereitstellung: T+~24h")]
-    
+
     style EEG fill:#e8f5e9,stroke:#2e7d32
-    style NB fill:#fff3e0,stroke:#ef6c00
+    style NB fill:#fff3e0,stroke:#ef6c00,color:#000
 ```
 
 ### 1.2 Kernprobleme
@@ -289,9 +289,9 @@ flowchart TD
     CHECKDONE -->|Ja| END
     CHECKDONE -->|Nein| LOOP
     
-    style START fill:#c8e6c9,stroke:#2e7d32
-    style END fill:#c8e6c9,stroke:#2e7d32
-    style HOLD fill:#ffecb3,stroke:#ff8f00
+    style START fill:#64b5f6,stroke:#1976d2,stroke-width:3px,color:#000
+    style END fill:#81c784,stroke:#2e7d32,stroke-width:3px,color:#000
+    style HOLD fill:#ffb74d,stroke:#e65100,stroke-width:3px,color:#000
 ```
 
 ### 4.2 Lokale Komponenten (bei Mitgliedern)
@@ -341,10 +341,10 @@ curl http://192.168.1.100/solar_api/v1/GetPowerFlowRealtimeData.fcgi
 flowchart LR
     SM[Smart Meter<br>P1-Port RJ12] --> ESP[ESP32 mit<br>P1-Reader<br>< 20 €]
     ESP --> |WiFi| Server[(EEG Server)]
-    
-    style SM fill:#fff3e0,stroke:#ef6c00
-    style ESP fill:#e8f5e9,stroke:#2e7d32
-    style Server fill:#e3f2fd,stroke:#1565c0
+
+    style SM fill:#fff3e0,stroke:#ef6c00,color:#000
+    style ESP fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Server fill:#e3f2fd,stroke:#1565c0,color:#000
 ```
 
 **Hardware:**
